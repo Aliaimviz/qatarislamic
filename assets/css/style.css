@@ -1130,6 +1130,8 @@ margin-left: -15px !important;
 }
 .cost-3col p{
     text-align: justify;
+        text-align: justify;
+    padding: 0px 16px;
 }
 .calulates-result text{
 	display: block;
@@ -1186,7 +1188,7 @@ margin-left: -15px !important;
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
- 
+ 	width: 100%;
     height: auto;
    
 	background-color: #f6f6f6; 

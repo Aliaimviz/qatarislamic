@@ -391,7 +391,7 @@ $(document).ready(function() {
 	<section>
 			<div class="container">
 				<div class="quote-page-form-top no-padding quote-page-form">
-				<div class="quote" style="background: maroon;height: 36px;margin-bottom: 15px;"><h3 style="color:white">Quote your Project</h3></div>
+				<div class="quote" style="background: #800000;height: 36px;margin-bottom: 15px;"><h3 style="color:white">Quote your Project</h3></div>
 					<?php echo form_open_multipart('email/sendEmail') ?>
 							<div class="col-sm-6 form-input-padding-left">
 								<div class="form-group">
@@ -457,7 +457,40 @@ $(document).ready(function() {
 			<button  style="margin-bottom: 15px;" type="submit" class="btn btn-primary hide-data-button" onclick="window.location='http://site.startupbug.net:6999/qatarislamic/home/calculate_view'">Return Back</button>
 		</div>
 		</div>
+		<section>
+			<div class="container">
+				<div class="quote-page-form-top no-padding quote-page-form">
+				<div class="quote" style="background: maroon;height: 36px;margin-bottom: 15px;"><h3 style="color:white">Quote your Project</h3></div>
+					<?php echo form_open_multipart('email/sendEmail') ?>
+							<div class="col-sm-6 form-input-padding-left">
+								<div class="form-group">
+									<input type="text" class="form-control"  name="name" placeholder="Name" required>
+								</div>
+							</div>	
 
+							<div class="col-sm-6 form-input-padding-right">
+								<div class="form-group">
+									<input type="email" class="form-control" name="email"   placeholder="Email" required>
+								</div>
+							</div>	
+
+							<div class="form-group">
+								<input type="text" class="form-control number-only" name="phone" placeholder="Phone" pattern="[0-9]{4,}" title="Enter Valide Phone Number in numeric values" required>
+							</div>
+
+							<div class="form-group">
+								 <input type="file" id="file-upload" name="resume-upload" style="display: none;">
+                                <label for="file-upload" class="btn form-control file-upload">Upload a file <span><i class="fa fa-cloud-upload" aria-hidden="true"></i></span></label>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="6" placeholder="Message" name="message" required></textarea>
+							</div>
+						  <button type="submit" name="send_email" value="send_email" class="btn btn-primary">SEND</button>
+					<?php echo form_close();?>
+				</div>
+				
+			</div>
+		</section>		
 
 </div>	
 	
