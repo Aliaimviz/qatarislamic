@@ -95,7 +95,7 @@
     		foreach($copytext as $text) {
        		
     		?>
-			<p><?php echo $text['copy_right'];?><span>|</span> Designed &amp; Developed By: <a href="http://startupbug.net/">Startupbug.net</a></p>
+			<p><?php echo $text['copy_right'];?><span>|</span> Designed &amp; Developed : <a href="http://startupbug.net/">Startupbug.net</a></p>
 			<?php
 			}
 			?>
